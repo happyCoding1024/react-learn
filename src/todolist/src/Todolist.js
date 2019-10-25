@@ -15,7 +15,6 @@ class Todolist extends Component {
                 <div>
                   <input
                     type="text"
-
                     value = {this.state.inputValue}
                     onChange = {this.handleInputChange.bind(this)}
                    />
