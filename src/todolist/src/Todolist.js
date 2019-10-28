@@ -1,39 +1,76 @@
 import React, { Component, Fragment }from 'react';
+import TodoItem from './TodoItem'
+import './style.css';
 
 class Todolist extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { // 组件的状态
-            inputValue: 'hello',
-            list: []
-        }
-    }
+  constructor(props) {
+    super(props);
+    this.state = { // 组件的状态
+        inputValue: '',
+        list: []
+    };
+    this.handleInputChange = this.handleInputChange.bind(this);
+    this.handleBtnClick = this.handleBtnClick.bind(this);
+    this.handleItemDelete = this.handleItemDelete.bind(this);
+  }
 
-    render() {
+  render() {
+    return (
+      <Fragment>
+        <div>
+          <label htmlFor='insertArea'>输入内容：</label>
+            <input
+              className = 'input'
+              id = 'insertArea'
+              type = "text"
+              value = {this.state.inputValue}
+              onChange = {this.handleInputChange}
+            />
+            <button onClick = {this.handleBtnClick}>提交</button>
+        </div>
+        <ul>
+          {this.getTodoItem()}
+        </ul>
+      </Fragment>
+    )
+  }
+
+  handleInputChange(e) {
+    const value = e.target.value;
+      this.setState( () => ( {
+        inputValue: value
+      }));
+  }
+
+  handleBtnClick(e) {
+      this.setState( (prevState) => ({
+        list: [...prevState.list, prevState.inputValue],
+        inputValue: ''
+      }));
+  }
+
+  handleItemDelete(index) {
+
+      this.setState((prevState) => {
+          const list = [...prevState.list];
+          list.splice(index, 1);
+          return {list};
+      });
+  }
+
+  getTodoItem() {
+      return this.state.list.map((item, index) => {
         return (
-            <Fragment>
-                <div>
-                  <input
-                    type="text"
-                    value = {this.state.inputValue}
-                    onChange = {this.handleInputChange.bind(this)}
-                   />
-                   <button>提交</button>
-                </div>
-                <ul>
-                    <li>learning react</li>
-                    <li>学英语</li>
-                    <li>健身</li>
-                </ul>
-
-            </Fragment>
-                )   
-    }
-
-    handleInputChange(e) {
-        console.log(this);
-        this.state.inputValue = e.target.value; // this指向Todolist，在ES6中类名实际上是一个
-        // console.log(e.target.value);
+          <li>
+            <TodoItem
+              key = {index}
+              content = {item}
+              index = {index}
+              deleteItem = {this.handleItemDelete}
+            />
+          </li>
+        );
+      });
     }
 }
 
