@@ -37,6 +37,11 @@ class Todolist extends Component {
     )
   }
 
+  shouldComponentUpdate() {
+    console.log("shouldComponentUpdate");
+    return false;
+  }
+
   handleInputChange(e) {
     const value = e.target.value;
       this.setState( () => ( {
