@@ -9,6 +9,7 @@ class TodoItem extends Component {
     }
 
     render() {
+      console.log('child render');
         return (
             <div
                 onClick={this.handleClick}
