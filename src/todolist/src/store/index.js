@@ -13,7 +13,8 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ? window.__
 const enhancer = composeEnhancers(applyMiddleware(sagaMiddleware));
 const store = createStore(
   reducer,
-  enhancer
+
+
 );
 
 sagaMiddleware.run(todoSagas);
