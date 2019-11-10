@@ -1,25 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4fb7b658-6802-41a8-aa09-68cf3409e0b0" name="Default Changelist" comment="redux">
-      <change afterPath="$PROJECT_DIR$/src/todolist/src/store/actionCreators.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/todolist/src/store/actionTypes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/todolist/src/store/sagas.js" afterDir="false" />
+    <list default="true" id="4fb7b658-6802-41a8-aa09-68cf3409e0b0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/todolist_react-redux/src/TodoList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/todolist_react-redux/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/todolist_react-redux/src/store/reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/todolist/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/todolist/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/todolist/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/todolist/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/todolist/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/todolist/src/Test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/todolist/src/TodoItem.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/todolist/src/TodoList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/todolist/src/TodoList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/todolist/src/TodoListUI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/todolist/src/TodoListUI.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/todolist/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/todolist/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/todolist/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/todolist/src/serviceWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/todolist/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/todolist/src/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/todolist/src/store/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/todolist/src/store/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/todolist/src/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/todolist/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/src/todolist/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,82 +20,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/todolist/src/TodoList.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/todolist_react-redux/src/TodoList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="41" column="22" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="22" />
+            <state relative-caret-position="968">
+              <caret line="44" column="23" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
-                <element signature="e#118#155#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/todolist/src/TodoListUI.js">
+        <entry file="file://$PROJECT_DIR$/src/todolist_react-redux/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+            <state relative-caret-position="110">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
               <folding>
-                <element signature="e#0#38#0" expanded="true" />
+                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/todolist/src/store/index.js">
+        <entry file="file://$PROJECT_DIR$/src/todolist_react-redux/src/store/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="18" column="28" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="28" />
+            <state relative-caret-position="22">
+              <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
               <folding>
-                <element signature="e#0#62#0" expanded="true" />
-                <element signature="e#132#178#0" expanded="true" />
+                <element signature="e#0#36#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/todolist/src/store/actionTypes.js">
+        <entry file="file://$PROJECT_DIR$/src/todolist_react-redux/src/store/reducer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="26" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/todolist/src/store/actionCreators.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="24" column="21" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/todolist/src/store/sagas.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="23" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#47#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/todolist/src/store/reducer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="29" column="38" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#86#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="220">
+              <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -144,11 +97,15 @@
         <option value="$PROJECT_DIR$/src/todolist/list.json" />
         <option value="$PROJECT_DIR$/src/todolist/src/TodoListUI.js" />
         <option value="$PROJECT_DIR$/src/todolist/src/store/saga.js" />
-        <option value="$PROJECT_DIR$/src/todolist/src/store/index.js" />
         <option value="$PROJECT_DIR$/src/todolist/src/store/actionCreators.js" />
         <option value="$PROJECT_DIR$/src/todolist/src/store/actionTypes.js" />
+        <option value="$PROJECT_DIR$/src/todolist/src/store/index.js" />
         <option value="$PROJECT_DIR$/src/todolist/src/TodoList.js" />
         <option value="$PROJECT_DIR$/src/todolist/src/store/sagas.js" />
+        <option value="$PROJECT_DIR$/src/todolist_react-redux/src/store/index.js" />
+        <option value="$PROJECT_DIR$/src/todolist_react-redux/src/index.js" />
+        <option value="$PROJECT_DIR$/src/todolist_react-redux/src/TodoList.js" />
+        <option value="$PROJECT_DIR$/src/todolist_react-redux/src/store/reducer.js" />
       </list>
     </option>
   </component>
@@ -179,22 +136,14 @@
               <item name="ReactProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="ReactProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="todolist" type="462c0819:PsiDirectoryNode" />
+              <item name="todolist_react-redux" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ReactProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="ReactProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="todolist" type="462c0819:PsiDirectoryNode" />
+              <item name="todolist_react-redux" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ReactProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReactProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="todolist" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -255,7 +204,8 @@
       <workItem from="1573107423959" duration="40929000" />
       <workItem from="1573257521530" duration="1008000" />
       <workItem from="1573281604397" duration="16614000" />
-      <workItem from="1573356020174" duration="2261000" />
+      <workItem from="1573356020174" duration="16368000" />
+      <workItem from="1573390309297" duration="6056000" />
     </task>
     <task id="LOCAL-00001" summary="todolist">
       <created>1571881163198</created>
@@ -376,21 +326,35 @@
       <option name="project" value="LOCAL" />
       <updated>1573216010076</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="thunk">
+      <created>1573366921048</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1573366921048</updated>
+    </task>
+    <task id="LOCAL-00019" summary="saga">
+      <created>1573388982814</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1573388982814</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124667000" />
+    <option name="totallyTimeSpent" value="144830000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="606" y="0" width="768" height="745" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.27123287" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.3452055" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3288364" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49925596" weight="0.400982" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -399,17 +363,17 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.33838382" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.2857143" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50074404" side_tool="true" weight="0.400982" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27123287" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1875" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3288364" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49925596" visible="true" weight="0.400982" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -417,8 +381,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.33838382" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2857143" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.2857143" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50074404" side_tool="true" visible="true" weight="0.400982" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -474,7 +438,9 @@
     <MESSAGE value="antd" />
     <MESSAGE value="redux" />
     <MESSAGE value="TodoListUI" />
-    <option name="LAST_COMMIT_MESSAGE" value="TodoListUI" />
+    <MESSAGE value="thunk" />
+    <MESSAGE value="saga" />
+    <option name="LAST_COMMIT_MESSAGE" value="saga" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/todolist/src/index.css" />
@@ -565,55 +531,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/todolist/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/todolist/node_modules/redux/es/redux.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
           <caret line="641" selection-start-line="641" selection-end-line="641" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/todolist/src/store/reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="29" column="38" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#86#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/todolist/src/TodoList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="41" column="22" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#118#155#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/todolist/src/store/actionTypes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/todolist/src/store/actionCreators.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -627,10 +548,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/todolist/src/TodoList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#118#155#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/todolist/src/store/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="28" />
+        <state relative-caret-position="66">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
           <folding>
             <element signature="e#0#62#0" expanded="true" />
             <element signature="e#132#178#0" expanded="true" />
@@ -638,12 +570,77 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/todolist/src/store/actionTypes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/todolist/src/store/actionCreators.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/todolist/src/store/sagas.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="23" />
+        <state relative-caret-position="462">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/todolist/src/store/reducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" selection-start-column="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/todolist_react-redux/public/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/todolist/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/todolist_react-redux/src/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
           <folding>
-            <element signature="e#0#47#0" expanded="true" />
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/todolist_react-redux/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/todolist_react-redux/src/store/reducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/todolist_react-redux/src/TodoList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="968">
+          <caret line="44" column="23" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
