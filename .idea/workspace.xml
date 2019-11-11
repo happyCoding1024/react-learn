@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fb7b658-6802-41a8-aa09-68cf3409e0b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/todolist_react-redux/src/TodoList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/todolist_react-redux/src/store/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/todolist_react-redux/src/store/reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jianshu/src/common/header/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jianshu/src/common/header/style.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jianshu/src/style.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/todolist/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/todolist/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/todolist/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/src/todolist/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/todolist/src/TodoList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/todolist/src/TodoList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/todolist_react-redux/src/TodoList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/todolist_react-redux/src/TodoList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/todolist_react-redux/src/store/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/todolist_react-redux/src/store/reducer.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/todolist_react-redux/src/TodoList.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jianshu/src/common/header/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="968">
-              <caret line="44" column="23" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
+            <state relative-caret-position="220">
+              <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -32,35 +33,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/todolist_react-redux/src/index.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/jianshu/src/common/header/style.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="182">
+              <caret line="28" column="2" lean-forward="true" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/todolist_react-redux/src/store/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
-              <folding>
-                <element signature="e#0#36#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/todolist_react-redux/src/store/reducer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -100,18 +80,24 @@
         <option value="$PROJECT_DIR$/src/todolist/src/store/actionCreators.js" />
         <option value="$PROJECT_DIR$/src/todolist/src/store/actionTypes.js" />
         <option value="$PROJECT_DIR$/src/todolist/src/store/index.js" />
-        <option value="$PROJECT_DIR$/src/todolist/src/TodoList.js" />
         <option value="$PROJECT_DIR$/src/todolist/src/store/sagas.js" />
         <option value="$PROJECT_DIR$/src/todolist_react-redux/src/store/index.js" />
         <option value="$PROJECT_DIR$/src/todolist_react-redux/src/index.js" />
-        <option value="$PROJECT_DIR$/src/todolist_react-redux/src/TodoList.js" />
+        <option value="$PROJECT_DIR$/src/todolist/src/TodoList.js" />
         <option value="$PROJECT_DIR$/src/todolist_react-redux/src/store/reducer.js" />
+        <option value="$PROJECT_DIR$/src/todolist_react-redux/src/TodoList.js" />
+        <option value="$PROJECT_DIR$/src/jianshu/src/index.css" />
+        <option value="$PROJECT_DIR$/src/jianshu/src/index.js" />
+        <option value="$PROJECT_DIR$/src/jianshu/src/style.js" />
+        <option value="$PROJECT_DIR$/src/jianshu/src/App.js" />
+        <option value="$PROJECT_DIR$/src/jianshu/src/common/header/index.js" />
+        <option value="$PROJECT_DIR$/src/jianshu/src/common/header/style.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="606" />
-    <option name="width" value="768" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="610" />
+    <option name="width" value="745" />
     <option name="height" value="745" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -136,14 +122,31 @@
               <item name="ReactProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="ReactProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="todolist_react-redux" type="462c0819:PsiDirectoryNode" />
+              <item name="jianshu" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ReactProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="ReactProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="todolist_react-redux" type="462c0819:PsiDirectoryNode" />
+              <item name="jianshu" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReactProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReactProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="jianshu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReactProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReactProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="jianshu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="header" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -155,7 +158,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../image-hosting" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../zhangguicheng1024.github.io" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs.jest.jest_package" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -205,7 +208,8 @@
       <workItem from="1573257521530" duration="1008000" />
       <workItem from="1573281604397" duration="16614000" />
       <workItem from="1573356020174" duration="16368000" />
-      <workItem from="1573390309297" duration="6056000" />
+      <workItem from="1573390309297" duration="6177000" />
+      <workItem from="1573430813106" duration="25025000" />
     </task>
     <task id="LOCAL-00001" summary="todolist">
       <created>1571881163198</created>
@@ -340,17 +344,23 @@
       <option name="project" value="LOCAL" />
       <updated>1573388982814</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="TodoList_react_redux">
+      <created>1573396930949</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1573396930950</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144830000" />
+    <option name="totallyTimeSpent" value="169976000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="606" y="0" width="768" height="745" extended-state="0" />
-    <editor active="true" />
+    <frame x="610" y="0" width="745" height="745" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.3452055" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.3069307" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -363,30 +373,11 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.33838382" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.2857143" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50074404" side_tool="true" weight="0.400982" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="10" sideWeight="0.50074404" side_tool="true" visible="true" weight="0.4003268" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1875" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49925596" visible="true" weight="0.400982" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.33838382" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.2857143" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50074404" side_tool="true" visible="true" weight="0.400982" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -440,7 +431,8 @@
     <MESSAGE value="TodoListUI" />
     <MESSAGE value="thunk" />
     <MESSAGE value="saga" />
-    <option name="LAST_COMMIT_MESSAGE" value="saga" />
+    <MESSAGE value="TodoList_react_redux" />
+    <option name="LAST_COMMIT_MESSAGE" value="TodoList_react_redux" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/todolist/src/index.css" />
@@ -548,17 +540,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/todolist/src/TodoList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#118#155#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/todolist/src/store/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -608,6 +589,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/todolist/src/TodoList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#118#155#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/todolist_react-redux/src/store/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -620,8 +612,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/todolist_react-redux/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="264">
+          <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="54" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -630,17 +622,74 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/todolist_react-redux/src/store/reducer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+        <state relative-caret-position="330">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/todolist_react-redux/src/TodoList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="968">
-          <caret line="44" column="23" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
+        <state relative-caret-position="273">
+          <caret line="70" column="29" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jianshu/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jianshu/src/statics/logo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jianshu/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jianshu/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jianshu/src/style.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="33" lean-forward="true" selection-start-column="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jianshu/src/common/header/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jianshu/src/common/header/style.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="28" column="2" lean-forward="true" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
