@@ -27,3 +27,13 @@ export const Nav = styled.div`
   height: 100%;
   background: green;
 `;
+// NavItem 就是一个带样式的div标签
+export const NavItem = styled.div` 
+  &.left { // 有left类的NavItem组件执行下面的样式
+    float: left;
+  }
+  &.right { // 有right类的NavItem组件执行下面的样式
+    float: right;
+  }
+  
+`;
