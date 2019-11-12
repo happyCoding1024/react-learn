@@ -25,15 +25,102 @@ export const Nav = styled.div`
   width: 960px;
   margin: 0 auto; // 水平居中 
   height: 100%;
-  background: green;
+  padding: 0 50px;
+  box-sizing: border-box;
 `;
 // NavItem 就是一个带样式的div标签
 export const NavItem = styled.div` 
+  line-height: 56px;
+  padding: 0 15px;
+  font-size: 16px;
+  color: #333;
   &.left { // 有left类的NavItem组件执行下面的样式
     float: left;
   }
   &.right { // 有right类的NavItem组件执行下面的样式
     float: right;
+    color: #969696;
   }
-  
+  &.active {
+    color: #ea6f5a;
+  }
+`;
+// NavSearch 就是一个带样式的input标签
+export const NavSearch = styled.input.attrs({
+  placeholder: '搜索'
+})` 
+  width: 160px;
+  border: none;
+  height: 38px;
+  outline: none;
+  border-radius: 19px;
+  background: #eee; 
+  margin-top: 9px;
+  margin-left: 20px;
+  padding: 0 30px 0 20px;
+  box-sizing: border-box;
+  font-size: 14px;
+  &.focused { // 当 &.focused 在&::placeholder 下面时就不起作用原因不明
+    width: 240px;
+  }
+  ///////////////搜索框动画样式开始//////////////////////////////////////////
+  &.slide-enter {
+      transition: all 0.2s ease-out; // 定义进入动画的时长和方式，ease-out不理解
+  }
+  &.slide-enter-active {
+    width: 240px; // 按照上面定义的动画时长和方式，最终要达到的状态。这两条语句合起来的效果就是width从160px到240px在0.2s内完成
+  }
+  &.slide-exit {
+    transition: all 0.2s ease-in; // 定义动画的时长和方式
+  }
+  &.slide-exit-active {
+    width: 160px;
+  }
+  ///////////////搜索框动画样式结束//////////////////////////////////////////   
+  &::placeholder { // 指的是NavSearch组件下的placeholder
+    color: #666;
+`;
+
+export const Addition = styled.div`
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 56px;
+`;
+
+export const Button = styled.div`
+  float: right;
+  line-height: 38px;
+  border-radius: 19px;
+  margin-top: 9px;
+  border: 1px solid #ec6149;
+  margin-right: 20px;
+  padding: 0 20px; 
+  font-size: 14px;
+  &.reg {
+    color: #ec6149;
+  }
+  &.writing {
+    color: #fff;
+    background: #ec6149;
+  }
+`;
+
+export const SearchWrapper = styled.div`
+  position: relative;
+  float: left;
+  .iconfont {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    width: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    text-align: center;
+    // background: green;
+    &.focused { 
+      background: #777;
+      color: #fff;
+    }  
+  }
 `;
