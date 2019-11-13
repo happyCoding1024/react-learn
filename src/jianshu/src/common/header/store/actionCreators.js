@@ -16,8 +16,8 @@ const changeList = (data) => ({
   // 但是在转换为immutable对象的过程中也会将里面的引用类型属性转换为immutable对象，所以list实际上是一个immutable对象
   // 而如果这里用 data： data，在reducer中， return state.set('list', action.data);时就是将一个js对象替换list immutable对象
   // 会导致错误，但是经过测试不会出现这种情况，有可能react版本升级改进了这个问题。
-  data: fromJS(data)
-
+  data: fromJS(data),
+  totalPage: Math.ceil(data.length / 10)
 });
 
 // 利用 Ajax 请求获取搜索框中的推荐内容

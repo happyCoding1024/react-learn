@@ -20,32 +20,50 @@ import {
 } from "./style";
 
 class Header extends Component {
+
+  getListArea() {
+    const { focused, list, page } = this.props;
+    //////////////////////////////////////////////////////////
+    const pageList = [];
+    const newList =  list.toJS(); // list 是一个immutable对象，toJS可以将其转换为JS对象,如果使用的是list确实不会出现正确的结果。
+    // 将当前page页的推荐内容存到pageList中
+    for (let i = (page - 1) * 10; i < page * 10; i++) {
+      pageList.push(
+        <SearchInfoItem key={newList[i]}>{newList[i]}</SearchInfoItem> //
+      );
+    }
+    //////////////////////////////////////////////////////////
+    if(focused) {
+      console.log(pageList);
+      return (
+        <SearchInfo >
+          <SearchInfoTitle>
+            热门搜索
+            <SearchInfoSwitch>换一批</SearchInfoSwitch>
+          </SearchInfoTitle>
+          {/* div 在这里没有什么实际意义，只是起到占一行的作用 */}
+          <SearchInfoList/>
+
+          {/*  // 推荐的内容全都显示的方法
+              // // this.props.list 是一个 immutable 数组，它也提供了以一个map方法
+              //   list.map((item) => {
+              //   // 这个地方注意一定要return出去，只有将 JSX 语句return出去才和上面的JSX语句一样被渲染解析。
+              //   return <SearchInfoItem key={item}>{item}</SearchInfoItem>;
+              // }) */}
+
+
+            {/*一页只显示10个数据的写法，结合上面的for循环*/}
+            { pageList }
+          {/*</SearchInfoList>*/}
+        </SearchInfo>
+      );
+    }else {
+      return null;
+    }
+  };
+
   render() {
-    const { focused, list, handleInputFocus, handleInputBlur } = this.props;
-    const getListArea = () => {
-      if(focused) {
-        return (
-          <SearchInfo >
-            <SearchInfoTitle>
-              热门搜索
-              <SearchInfoSwitch>换一批</SearchInfoSwitch>
-            </SearchInfoTitle>
-            {/* div 在这里没有什么实际意义，只是起到占一行的作用 */}
-            <SearchInfoList>
-              {
-                // this.props.list 是一个 immutable 数组，它也提供了以一个map方法
-                  list.map((item) => {
-                  // 这个地方注意一定要return出去，只有将 JSX 语句return出去才和上面的JSX语句一样被渲染解析。
-                  return <SearchInfoItem key={item}>{item}</SearchInfoItem>;
-                })
-              }
-            </SearchInfoList>
-          </SearchInfo>
-        );
-      }else {
-        return null;
-      }
-    };
+    const { focused, handleInputFocus, handleInputBlur } = this.props;
     return(
       <HeaderWrapper>
         <IconFont/>
@@ -76,7 +94,7 @@ class Header extends Component {
             >
               &#xe64d;
             </i>
-            {getListArea()}
+            {this.getListArea()}
           </SearchWrapper>
         </Nav>
         <Addition>
@@ -104,7 +122,8 @@ const mapStateToProps = (state) => {
     // focused: state.get('header').get('focused') // 普通对象是没有get方法的
     // 在 redux-immutable 中提供了 getIn 这种取immutable对象属性的方法。
     focused: state.getIn(['header', 'focused']), // 表示从state这个immutable对象中的header中取focused属性的值
-    list: state.getIn(['header', 'list'])
+    list: state.getIn(['header', 'list']),
+    page: state.getIn(['header', 'page'])
   }
 };
 // 使得Provider包裹的那些组件的props上的方法能够直接调用dispatch方法
