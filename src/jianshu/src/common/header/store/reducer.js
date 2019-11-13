@@ -15,7 +15,7 @@ export default (state=defaultState, action) => {
       return state.set('focused', true);
     case constants.SEARCH_BLUR:
       return state.set('focused', false);
-    case constants.SEARCH_FOCUS:
+    case constants.CHANGE_LIST:
       return state.set('list', action.data);
   }
 
