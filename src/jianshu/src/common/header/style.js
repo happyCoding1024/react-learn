@@ -101,6 +101,7 @@ export const SearchInfoTitle = styled.div`
 export const SearchInfoSwitch = styled.span`
   float: right;
   font-size: 13px;
+  cursor: pointer;
   .spin {
     display: block; // 只有块元素，transform才会生效
     float: left;
@@ -130,6 +131,7 @@ export const SearchInfoList = styled.div`
 
 export const Addition = styled.div`
   position: absolute;
+  cursor: pointer;
   right: 0;
   top: 0;
   height: 56px;

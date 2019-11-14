@@ -81,7 +81,7 @@ class Header extends Component {
   };
 
   render() {
-    const { focused, handleInputFocus, handleInputBlur } = this.props;
+    const { focused, handleInputFocus, handleInputBlur, list } = this.props;
     return(
       <HeaderWrapper>
         <IconFont/>
@@ -104,7 +104,7 @@ class Header extends Component {
             >
               <NavSearch
                 className={focused ? 'focused' : ''}
-                onFocus={handleInputFocus}
+                onFocus={() => handleInputFocus(list)}
                 onBlur={handleInputBlur}
               ></NavSearch>
             </CSSTransition>
@@ -148,8 +148,11 @@ const mapDispatchToProps = (dispatch) => {
   return {
     // 利用 ES6 中对象方法的简洁表示法
     // 输入框获得焦点时执行的函数
-    handleInputFocus() {
-      dispatch(actionCreators.getList());
+    handleInputFocus(list) {
+      // 下面这样写有一点问题在于每次点击input框时都会发一次Ajax请求，实际上是没有必要的。
+      // 通过传入list，当list的size是0时才发送Ajax请求获得数据。
+      // 只有当list.size 为0时才会派发action请求数据,相当于一个if语句
+      (list.size === 0)&&(dispatch(actionCreators.getList()));
       dispatch(actionCreators.searchFocus());
       // 运用reducer合并后，现在有一点不明白：是不是 dispatch(action) 会将 state 和action 加载到所有的 reducer 中呢？ 应该是的
     },
