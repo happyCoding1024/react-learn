@@ -5,6 +5,8 @@ import { fromJS } from 'immutable';
 // 放在这里，在store中的reducer.js中进行合并。
 const defaultState = fromJS({ // fromJS(JS对象)将一个JS对象转换为immutable对象
   focused: false,
+  mouseIn: false, // false表示鼠标未移入某个区域
+  mouseLeave: true, // true表示鼠标当前位于某个区域
   list: [],
   page: 1, // page:当前页数 现在是有多少推荐数据就显示多少，想实现一次只显示10个，点击换一批显示另外10个
   totalPage: 1 // totalPage: 总页数
@@ -14,15 +16,28 @@ export default (state=defaultState, action) => {
   // 使用 switch 优化 if 语句
   // 使用 switch 语句时一般在每个case后面都要加上一个break，这里为什么没有这样做呢？
   // 因为这里每个case下面都是return语句，后面也不会再执行了。
+  // immutable 对象的set方法，会结合之前immutable对象的值和现在要设置的值
+  // 返回一个全新的immutable对象，并没有改变原始的immutable对象。
   switch(action.type) {
     case constants.SEARCH_FOCUS:
       return state.set('focused', true);
     case constants.SEARCH_BLUR:
       return state.set('focused', false);
     case constants.CHANGE_LIST:
-      return state.set('list', action.data).set('totalPage', action.totalPage);
+      // 利用merge方法可以同时设置新的 immutable 对象的属性
+      return state.merge({
+        'list': action.data,
+        'totalPage': action.totalPage
+      });
+      //return state.set('list', action.data).set('totalPage', action.totalPage);
+    case constants.MOUSE_ENTER:
+      return state.set('mouseIn', true);
+    case constants.MOUSE_LEAVE:
+      return state.set('mouseIn', false);
+    case constants.CHANGE_PAGE:
+      return state.set('page', action.page);
     default:
-      return state;
+    return state;
   }
 
   // if (action.type === constants.SEARCH_FOCUS) {

@@ -22,24 +22,41 @@ import {
 class Header extends Component {
 
   getListArea() {
-    const { focused, list, page } = this.props;
+    const { focused, list, page, totalPage, handleMouseEnter, handleMouseLeave, mouseIn, handlePageChange } = this.props;
     //////////////////////////////////////////////////////////
     const pageList = [];
     const newList =  list.toJS(); // list 是一个immutable对象，toJS可以将其转换为JS对象,如果使用的是list确实不会出现正确的结果。
     // 将当前page页的推荐内容存到pageList中
-    for (let i = (page - 1) * 10; i < page * 10; i++) {
-      pageList.push(
-        <SearchInfoItem key={newList[i]}>{newList[i]}</SearchInfoItem> //
-      );
+
+    // 每一个 searchInfoItem 都给了key值为什么还会有key值的警告呢？
+    // console.log(newList); // 输出10个undefined，原因是此时list还没有通过Ajax请求到，还是初始时的空数组
+    // 修改也比较简单可以利用 newList.length 加一个if判断。
+    if( newList.length ) {
+      for (let i = (page - 1) * 10; i < page * 10; i++) {
+
+        // 最后一页的数据不足10个时newList后面几个数据又是undefined，加上下面这个if就可以解决问题。
+        if(newList[i] === undefined) break;
+        pageList.push(
+          <SearchInfoItem key={newList[i]}>{newList[i]}</SearchInfoItem> //
+        );
+      }
     }
     //////////////////////////////////////////////////////////
-    if(focused) {
-      console.log(pageList);
+    // 当鼠标点击或者在推荐页面时都显示
+    if(focused || mouseIn) {
       return (
-        <SearchInfo >
+        <SearchInfo
+          onMouseEnter={ handleMouseEnter }
+          onMouseLeave={ handleMouseLeave }
+        >
           <SearchInfoTitle>
             热门搜索
-            <SearchInfoSwitch>换一批</SearchInfoSwitch>
+            <SearchInfoSwitch
+              // 这种往函数里面传入参数的思想一定要会
+              onClick={ () => { handlePageChange(totalPage, page); } }
+            >
+              换一批
+            </SearchInfoSwitch>
           </SearchInfoTitle>
           {/* div 在这里没有什么实际意义，只是起到占一行的作用 */}
           <SearchInfoList/>
@@ -107,10 +124,7 @@ class Header extends Component {
       </HeaderWrapper>
     )
   }
-
-
 }
-
 
 // mapStateToProps 和 mapDispatchToProps 方法 return出去的都是对象，并且对象的属性都是组件this.props的属性。
 // 使得Provider包裹的那些组件的props上state能够直接得到store中的state(能够直接利用state中的数据更新组件props中的state)
@@ -123,7 +137,9 @@ const mapStateToProps = (state) => {
     // 在 redux-immutable 中提供了 getIn 这种取immutable对象属性的方法。
     focused: state.getIn(['header', 'focused']), // 表示从state这个immutable对象中的header中取focused属性的值
     list: state.getIn(['header', 'list']),
-    page: state.getIn(['header', 'page'])
+    page: state.getIn(['header', 'page']),
+    totalPage: state.getIn(['header', 'totalPage']),
+    mouseIn: state.getIn(['header', 'mouseIn'])
   }
 };
 // 使得Provider包裹的那些组件的props上的方法能够直接调用dispatch方法
@@ -140,8 +156,26 @@ const mapDispatchToProps = (dispatch) => {
     handleInputBlur() {
       const action = actionCreators.searchBlur();
       dispatch(action);
-    }
+    },
 
+    // 鼠标进入点击搜索框出现的推荐页面时执行的函数
+    handleMouseEnter() {
+      dispatch(actionCreators.mouseEnter());
+    },
+
+    // 鼠标移出点击搜索框出现的推荐页面时执行的函数
+    handleMouseLeave() {
+      dispatch(actionCreators.mouseLeave());
+    },
+
+    // 点击换一批时执行的函数
+    handlePageChange(totalPage, page) {
+      if (page < totalPage) {
+        dispatch(actionCreators.changePage(page + 1));
+      }else {
+        dispatch(actionCreators.changePage(1));
+      }
+    }
     /////////////你这个箭头函数的写法都是错的/////////////////
     // 因为这里并不是回调函数，所以也没必要写成箭头函数的形式
     // handleInputFocus () => {
