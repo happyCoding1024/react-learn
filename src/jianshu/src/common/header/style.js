@@ -101,6 +101,14 @@ export const SearchInfoTitle = styled.div`
 export const SearchInfoSwitch = styled.span`
   float: right;
   font-size: 13px;
+  .spin {
+    display: block; // 只有块元素，transform才会生效
+    float: left;
+    font-size: 12px;
+    margin-right: 2px;
+    transition: all .3s ease-in; // 所有的动画效果都在2ms之内完成，先慢后快
+    transform-origin: center center; // 旋转中心
+  }
 `;
 
 export const SearchInfoItem = styled.a`
@@ -138,7 +146,7 @@ export const Button = styled.div`
   font-size: 14px;
   &.reg {
     color: #ec6149;
-  }
+  }nn
   &.writing {
     color: #fff;
     background: #ec6149;
@@ -148,7 +156,7 @@ export const Button = styled.div`
 export const SearchWrapper = styled.div`
   position: relative;
   float: left;
-  .iconfont {
+  .zoom {
     position: absolute;
     right: 5px;
     bottom: 5px;

@@ -53,8 +53,10 @@ class Header extends Component {
             热门搜索
             <SearchInfoSwitch
               // 这种往函数里面传入参数的思想一定要会
-              onClick={ () => { handlePageChange(totalPage, page); } }
+              onClick={ () => { handlePageChange(totalPage, page, this.spinIcon); } }
             >
+              {/* 下面的代码中ref方法可以时候icon获取i这个DOM结点, 然后再赋值给this.spinIcon */}
+              <i ref={(icon)=>{this.spinIcon = icon}} className="iconfont spin">&#xe851;</i>
               换一批
             </SearchInfoSwitch>
           </SearchInfoTitle>
@@ -67,7 +69,6 @@ class Header extends Component {
               //   // 这个地方注意一定要return出去，只有将 JSX 语句return出去才和上面的JSX语句一样被渲染解析。
               //   return <SearchInfoItem key={item}>{item}</SearchInfoItem>;
               // }) */}
-
 
             {/*一页只显示10个数据的写法，结合上面的for循环*/}
             { pageList }
@@ -107,7 +108,7 @@ class Header extends Component {
                 onBlur={handleInputBlur}
               ></NavSearch>
             </CSSTransition>
-            <i className={focused ? 'focused iconfont' : 'iconfont'}
+            <i className={focused ? 'focused iconfont zoom' : 'iconfont zoom'}
             >
               &#xe64d;
             </i>
@@ -169,7 +170,23 @@ const mapDispatchToProps = (dispatch) => {
     },
 
     // 点击换一批时执行的函数
-    handlePageChange(totalPage, page) {
+    handlePageChange(totalPage, page, spin) {
+      // 纯 JS 语法，spin实际上是一个DOM对象，style是它的一个属性，transform又是style对象的一个属性。
+      // spin.style.transform = 'rotate(360deg)';
+
+      // 记录上一次旋转后的角度
+      // spin.style.transform的值是'rotate(360deg)'，要想只取得其中的'360'(注意取得的360是字符串)，可以使用
+      // 正则表达式，结合replace方法，将字符串都替换为空字符串。
+      let originAngle = spin.style.transform.replace(/[^0-9]/ig, '');
+      // 第一次点击换一批时 spin.style.transform 是没有值的。
+      if (originAngle) {
+        originAngle = parseInt(originAngle, 10);
+      }else {
+        originAngle = 0; // originAngle没有值
+      }
+
+      spin.style.transform = 'rotate( '+ (originAngle + 360) + 'deg)';
+
       if (page < totalPage) {
         dispatch(actionCreators.changePage(page + 1));
       }else {
