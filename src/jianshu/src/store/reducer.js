@@ -14,6 +14,7 @@ import { combineReducers } from 'redux-immutable';
 import  { headerReducer }   from '../common/header/store/';
 /////////////////////////////////////////////////////////////////////////////
 
+import { reducer as homeReducer } from '../pages/home/store';
 ////////////////////////说明reducer合并的原理/////////////////////////////////
 // 为了不使这个reducer文件的代码太多，故分成许多reducer，在这里将reducer进行合并
 // 再将最终合并完成的reducer export出去。
@@ -22,7 +23,8 @@ import  { headerReducer }   from '../common/header/store/';
 // 当上面引入的是 redux-immutable 这个模块时，下面这段代码生成的 reducer 就变成了一个immutable对象
 // 其实把下面代码中的 reducer 换成 newState 更好理解
 const reducer = combineReducers({
-  header: headerReducer
+  header: headerReducer,
+  home: homeReducer
 });
 ///////////////////////////////////////////////////////////////////////////////
 
