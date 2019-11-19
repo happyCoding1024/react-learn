@@ -30,6 +30,7 @@ export const TopicWrapper = styled.div`
   padding: 20px 0 10px 0;
   margin-left: -18px; // 目的是充分利用宽度，先向左边对齐，
                       // 如果距离左边元素不足-18px，那么margin-left就为0。
+  border-bottom: 1px solid #dcdcdc;               
 `;
 
 export const TopicItem = styled.div`
@@ -51,5 +52,36 @@ export const TopicItem = styled.div`
     display：block; 
     float: left;
     margin-right: 10px;
+  }
+`;
+
+// List 组件样式
+export const ListItem = styled.div`{
+  overflow: hidden;
+  padding: 20px, 0;
+  border-bottom:  1px solid #dcdcdc;
+  .pic {
+    width: 125px;
+    height: 100px;
+    display: block;
+    float: right;
+    border-radius: 10px;
+  }
+}
+`;
+
+export const ListInfo = styled.div`
+  float: left;
+  width: 500px;
+  .title {
+    line-height: 27px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  .desc {
+    font-size: 13px;
+    line-height: 24px;
+    color: #999;
   }
 `;
