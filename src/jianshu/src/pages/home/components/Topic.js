@@ -4,8 +4,6 @@ import React, { Component } from 'react';
 import { TopicWrapper, TopicItem } from '../style';
 // 和store建立连接
 import { connect } from 'react-redux';
-import mapStateToProps from "react-redux/es/connect/mapStateToProps";
-import mapDispatchToProps from "react-redux/es/connect/mapDispatchToProps";
 
 class Topic extends Component {
   render() {
@@ -19,6 +17,7 @@ class Topic extends Component {
                 <img
                   className='topic-pic'
                   src= {item.get('imgUrl')} // 因为item是一个immutable对象因此要使用get方法获取属性
+                  alt='' // 如果不加这个alt属性就会有警告
                 />
                 {item.get('title')}
               </TopicItem>
@@ -31,7 +30,7 @@ class Topic extends Component {
 }
 
 const mapState = (state) => ({
-  list: state.get('home').get('topicList')
+  list: state.getIn(['home', 'topicList'])
 });
 
 export default connect(mapState, null)(Topic);
