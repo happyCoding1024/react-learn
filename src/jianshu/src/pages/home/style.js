@@ -21,7 +21,7 @@ export const HomeLeft = styled.div`
 `;
 
 export const HomeRight = styled.div`
-  width: 200px;
+  width: 280px;
   float: right;
 `;
 
@@ -84,4 +84,25 @@ export const ListInfo = styled.div`
     line-height: 24px;
     color: #999;
   }
+`;
+
+export const RecommendWrapper = styled.div`
+  margin: 30px 0;
+  width: 280px;
+`;
+
+export const RecommendItem = styled.div`
+  width: 280px;
+  height: 50px;
+  // 接收父组件传递过来值的方法 
+  background: url(${(props) => props.imgUrl});
+  background-size: contain;
+`;
+
+export const WriterWrapper = styled.div`
+  width: 278px;
+  border: 1px solid #dcdcdc;
+  height:  300px;
+  line-height: 300px;
+  text-align: center;
 `;

@@ -32,6 +32,25 @@ const defaultState = fromJS({ // fromJS(JS对象)将一个JS对象转换为immut
     title: '别以为看字就是读书，深阅读，才能撬动你的灵魂！',                  
     desc: '文/俊英子 一月，我从一个二手平台买了一些书，当翻到《深阅读》的一刹那我就停下了，第一次见到透明的，类似磨砂的书皮！从外观上来看是我见过最有艺术...',
     imgUrl: '//upload-images.jianshu.io/upload_images/4458735-24da0a0e13018970.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240'
+  }],
+  recommendList: [{
+    id: 1,
+    imgUrl: '//cdn2.jianshu.io/assets/web/banner-s-club-aa8bdf19f8cf729a759da42e4a96f366.png'
+  },{
+    id: 2,
+    imgUrl: '//cdn2.jianshu.io/assets/web/banner-s-7-1a0222c91694a1f38e610be4bf9669be.png'
+  },{
+    id: 3,
+    imgUrl: '//cdn2.jianshu.io/assets/web/banner-s-club-aa8bdf19f8cf729a759da42e4a96f366.png'
+  },{
+    id: 4,
+    imgUrl: '//cdn2.jianshu.io/assets/web/banner-s-7-1a0222c91694a1f38e610be4bf9669be.png'
+  },{
+    id: 5,
+    imgUrl: '//cdn2.jianshu.io/assets/web/banner-s-club-aa8bdf19f8cf729a759da42e4a96f366.png'
+  },{
+    id: 6,
+    imgUrl: '//cdn2.jianshu.io/assets/web/banner-s-7-1a0222c91694a1f38e610be4bf9669be.png'
   }]
 });
 
