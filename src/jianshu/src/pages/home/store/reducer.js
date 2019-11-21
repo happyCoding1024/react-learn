@@ -1,4 +1,5 @@
 import { fromJS } from 'immutable';
+import { constants } from './'
 
 const defaultState = fromJS({ // fromJS(JS对象)将一个JS对象转换为immutable对象
   topicList: [],
@@ -8,7 +9,7 @@ const defaultState = fromJS({ // fromJS(JS对象)将一个JS对象转换为immut
 
 export default (state=defaultState, action) => {
   switch (action.type) {
-    case 'change_home_data':
+    case constants.CHANGE_HOME_DATA:
       // action.topicList 是一个JS对象，state中的topicList是一个immutable对象，故需要转换一下
       // 这种写法和下面分开写的作用相同
       console.log(action);
