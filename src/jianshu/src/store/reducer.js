@@ -15,6 +15,9 @@ import  { headerReducer }   from '../common/header/store/';
 /////////////////////////////////////////////////////////////////////////////
 
 import { reducer as homeReducer } from '../pages/home/store';
+
+import { reducer as detailReducer } from '../pages/detail/store';
+
 ////////////////////////说明reducer合并的原理/////////////////////////////////
 // 为了不使这个reducer文件的代码太多，故分成许多reducer，在这里将reducer进行合并
 // 再将最终合并完成的reducer export出去。
@@ -24,7 +27,8 @@ import { reducer as homeReducer } from '../pages/home/store';
 // 其实把下面代码中的 reducer 换成 newState 更好理解
 const reducer = combineReducers({
   header: headerReducer,
-  home: homeReducer
+  home: homeReducer,
+  detail: detailReducer
 });
 ///////////////////////////////////////////////////////////////////////////////
 
