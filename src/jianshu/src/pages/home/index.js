@@ -69,7 +69,7 @@ const mapDispatch = (dispatch) => ({
   // 当当前在顶部这时候滚动时调用这个方法
   changeScrollTopShow() {
     // scrollTop 表示的是距离顶部的距离，当最初位于最顶部不滚动时值为0
-    console.log(document.documentElement.scrollTop);
+    // console.log(document.documentElement.scrollTop);
     if(document.documentElement.scrollTop > 100) {
       dispatch(actionCreators.toggleTopShow(true));
     }else {

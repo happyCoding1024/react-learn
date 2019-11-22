@@ -6,13 +6,14 @@ import { Link } from 'react-router-dom';
 
 class List extends PureComponent {
   render() {
+    console.log(this.props);
   	const { list, getMoreList, page } = this.props;
     return (
       <div>
       	{
       		list.map((item, index) => {
       			return (
-      			  <Link key={ item.get('id')} to={'/detail'}>
+      			  <Link key={ item.get('id')} to={'/detail/' + item.get('id')}>
                 <ListItem >
                   <img
                     className='pic'

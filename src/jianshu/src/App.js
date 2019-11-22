@@ -18,8 +18,12 @@ function App() {
 					{/* 当访问根目录是显示返回<div>home</div>， react表示精确的url，不加这个的话访问 /detail 也会访问 / */}
           {/*使用组件时利用Route的component属性*/}
 					<Route path='/' exact component={Home}></Route>
-					<Route path='/detail' exact component={Detail}></Route>
-				</div>      	
+          {/*下面这样写当访问的是 /detail2 这种形式时也不会进行跳转，原因在于下面的是精确匹配
+          若想实现也匹配 /detail/2 这种形式，可以将path写成 '/detail/:id'
+          */}
+          {/*<Route path='/detail' exact component={Detail}></Route>*/}
+          <Route path='/detail/:id' exact component={Detail}></Route>
+				</div>
       </BrowserRouter>
     </Provider>
   );
