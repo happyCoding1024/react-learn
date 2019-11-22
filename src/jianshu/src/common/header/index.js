@@ -1,4 +1,4 @@
-import React, { Component }from 'react';
+import React, { PureComponent }from 'react';
 import { IconFont } from '../../statics/iconfont/iconfont';
 import { CSSTransition } from 'react-transition-group';
 import { actionCreators }   from './store';
@@ -21,7 +21,7 @@ import {
 } from "./style";
 import { Link } from 'react-router-dom';
 
-class Header extends Component {
+class Header extends PureComponent {
 
   getListArea() {
     const { focused, list, page, totalPage, handleMouseEnter, handleMouseLeave, mouseIn, handlePageChange } = this.props;
@@ -131,10 +131,12 @@ class Header extends Component {
           </SearchWrapper>
         </Nav>
         <Addition>
+         <Link to='/Write'>
           <Button className='writing'>
             <i className="iconfont">&#xe6a4;</i>
             写文章
           </Button>
+         </Link>
           <Button className='reg'>注册</Button>
         </Addition>
       </HeaderWrapper>
