@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 // Topic 组件的功能比较少，没必要单独建立一个style.js文件来管理内部的样式
 // 可以在外层的style.js文件中写样式
 import { TopicWrapper, TopicItem } from '../style';
 // 和store建立连接
 import { connect } from 'react-redux';
 
-class Topic extends Component {
+class Topic extends PureComponent {
   render() {
     const { list } = this.props;
     return (

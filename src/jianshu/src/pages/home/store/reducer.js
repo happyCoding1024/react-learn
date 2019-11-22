@@ -18,7 +18,7 @@ const changeHomeData = (state, action) => {
 };
 
 const addHomeList = (state, action) => {
-  state.merge({
+  return state.merge({
     'articleList': state.get('articleList').concat(fromJS(action.articleList)),
     'articlePage': action.nextPage
   });

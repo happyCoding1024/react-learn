@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import Topic from './components/Topic';
 import List from './components/List';
 import Recommend from './components/Recommend';
@@ -12,9 +12,9 @@ import {
   HomeLeft,
   HomeRight
 } from './style';
-import mapDispatchToProps from "react-redux/es/connect/mapDispatchToProps";
 
-class Home extends Component {
+class Home extends PureComponent {
+
 
   handleScrollTop() {
     window.scrollTo(0, 0)
