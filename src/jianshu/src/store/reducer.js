@@ -18,6 +18,8 @@ import { reducer as homeReducer } from '../pages/home/store';
 
 import { reducer as detailReducer } from '../pages/detail/store';
 
+import { reducer as loginReducer } from '../pages/login/store';
+
 ////////////////////////说明reducer合并的原理/////////////////////////////////
 // 为了不使这个reducer文件的代码太多，故分成许多reducer，在这里将reducer进行合并
 // 再将最终合并完成的reducer export出去。
@@ -28,7 +30,8 @@ import { reducer as detailReducer } from '../pages/detail/store';
 const reducer = combineReducers({
   header: headerReducer,
   home: homeReducer,
-  detail: detailReducer
+  detail: detailReducer,
+  login: loginReducer
 });
 ///////////////////////////////////////////////////////////////////////////////
 

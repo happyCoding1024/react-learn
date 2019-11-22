@@ -2,6 +2,7 @@ import React, { Component }from 'react';
 import { IconFont } from '../../statics/iconfont/iconfont';
 import { CSSTransition } from 'react-transition-group';
 import { actionCreators }   from './store';
+import { actionCreators as loginActionCreators } from '../../pages/login/store';
 import { connect } from 'react-redux'; // connect方法使得Provider中包裹的组件和store建立连接
 import {
   HeaderWrapper, // HeaderWrapper 就是一个带样式的div标签
@@ -82,7 +83,7 @@ class Header extends Component {
   };
 
   render() {
-    const { focused, handleInputFocus, handleInputBlur, list } = this.props;
+    const { focused, handleInputFocus, handleInputBlur, list, login, logOut } = this.props;
     return(
       <HeaderWrapper>
         <IconFont/>
@@ -92,7 +93,18 @@ class Header extends Component {
         <Nav>
           <NavItem className='left active'>首页</NavItem>
           <NavItem className='left'>下载App</NavItem>
-          <NavItem className='right'>登录</NavItem>
+          {
+            login ?
+                <NavItem className='right' onClick={logOut}>
+                退出
+                </NavItem>
+              :
+              <Link to='/login'>
+                <NavItem className='right'>
+                  登录
+                </NavItem>
+              </Link>
+          }
           <NavItem className='right'>
             <i className="iconfont">&#xe636;</i>
           </NavItem>
@@ -143,7 +155,8 @@ const mapStateToProps = (state) => {
     list: state.getIn(['header', 'list']),
     page: state.getIn(['header', 'page']),
     totalPage: state.getIn(['header', 'totalPage']),
-    mouseIn: state.getIn(['header', 'mouseIn'])
+    mouseIn: state.getIn(['header', 'mouseIn']),
+    login: state.getIn(['login', 'login'])
   }
 };
 // 使得Provider包裹的那些组件的props上的方法能够直接调用dispatch方法
@@ -198,7 +211,7 @@ const mapDispatchToProps = (dispatch) => {
       }else {
         dispatch(actionCreators.changePage(1));
       }
-    }
+    },
     /////////////你这个箭头函数的写法都是错的/////////////////
     // 因为这里并不是回调函数，所以也没必要写成箭头函数的形式
     // handleInputFocus () => {
@@ -208,6 +221,12 @@ const mapDispatchToProps = (dispatch) => {
     //   dispatch(action);
     // }
     ///////////////////////////////////////////////////////
+
+    // 它要做的就是改变store中login的值为false
+    logOut() {
+      // 这里的 actionCreators要使用login下的，所以要还要import另一个actionCreators
+      dispatch(loginActionCreators.logOut());
+    }
   }
 };
 
