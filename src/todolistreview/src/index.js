@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Todolist from './Todolist';
+import Father from './Father';
 
-ReactDOM.render(<Todolist />, document.getElementById('root'));
+ReactDOM.render(<Father />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
