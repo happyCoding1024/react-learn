@@ -3,23 +3,22 @@ import React, { Component, Fragment } from 'react';
 import 'antd/dist/antd.css';
 // 引入 antd 组件
 import { Input, Button, List } from 'antd';
-
-const data = [
-  'Racing car sprays burning fuel into crowd.',
-  'Japanese princess to wed commoner.',
-  'Australian walks 100km after outback crash.',
-  'Man charged over missing wedding girl.',
-  'Los Angeles battles huge wildfires.',
-];
+import store from './store';
 
 class TodoList extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = store.getState();
+    console.log(this.state.data);
+  }
 
   render() {
     return (
       <Fragment>
         <div style={{marginLeft: '10px', marginTop: '10px'}}>
           { /* 使用Input组件 */}
-          <Input placeholder='todo info' style={{width: '300px', marginRight: '10px'}} />
+          <Input placeholder={this.state.inputValue} style={{width: '300px', marginRight: '10px'}} />
           { /* 使用Button组件 */}
           <Button type='primary'>submit</Button>
           <List
@@ -27,7 +26,7 @@ class TodoList extends Component {
             header={<div>Header</div>}
             footer={<div>Footer</div>}
             bordered
-            dataSource={data}
+            dataSource={this.state.data}
             renderItem={item => (
               <List.Item>
                 {item}

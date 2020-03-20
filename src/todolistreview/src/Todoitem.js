@@ -24,6 +24,10 @@ class TodoItem extends Component {
   handleBtnClick(e) {
     this.props.handleDelete(this.props.index);
   }
+
+  shouldComponentUpdate(nextProps, nextstate) {
+    return nextProps.content !== nextProps.content;
+  }
 }
 
 export default TodoItem;
