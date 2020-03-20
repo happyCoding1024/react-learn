@@ -22,7 +22,7 @@ class TodoItem extends Component {
   }
 
   handleBtnClick(e) {
-    this.props.handleDelete(this.props.index);
+    TodoList.handleDelete(this.props.index);
   }
 
   shouldComponentUpdate(nextProps, nextstate) {
