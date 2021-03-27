@@ -11,7 +11,7 @@ class TodoListUI extends Component {
             value={this.props.inputValue}
             placeholder={'todo info'}
             style={{width: '300px', marginRight: '10px'}}
-            onChange={this.props.handleInputChange}
+            onChange={TodoList.handleInputChange}
           />
           <Button
             onClick={this.props.handleButtonClick}

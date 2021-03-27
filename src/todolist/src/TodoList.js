@@ -17,7 +17,7 @@ class TodoList extends Component {
   constructor(props) {
     super(props);
     this.state = store.getState();
-    this.handleInputChange = this.handleInputChange.bind(this);
+    TodoList.handleInputChange = this.handleInputChange.bind(this);
     store.li(this.handleStoreChange.bind(this));
     this.handleButtonClick = this.handleButtonClick.bind(this);
     this.handleItemDelete = this.handleItemDelete.bind(this);

@@ -1,29 +1,14 @@
-import React, { Component, Fragment } from 'react';
-import './style.css';
+import React from "react";
+import Demo from "./Demo";
+import { math } from 'math_library1';
 
-class App extends Component {
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      show: true
-    }
-    this.handleToggle = this.handleToggle.bind(this);
-  }
-
+class App extends React.Component {
   render() {
-    return (
-      <Fragment>
-        <div className={this.state.show ? 'show' : 'hide '}>hello</div>
-        <button onClick={this.handleToggle}>toggle</button>
-      </Fragment>
-    )
+    return <Demo />;
   }
-
-  handleToggle() {
-    this.setState({
-      show: !this.state.show
-    })
+  componentDidMount() {
+    console.log(123);
+    console.log(math);
   }
 }
 
