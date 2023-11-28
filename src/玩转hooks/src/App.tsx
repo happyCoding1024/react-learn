@@ -1,10 +1,12 @@
 import React from 'react';
-import { UseMemoTest } from './useMemo';
+// import {observable, autorun} from 'mobx';
+// import { UseMemoTest } from './useMemo';
+import { Demo as DebounceDemo  } from './hooks/useDebounceFn/demo' 
 
 function App() {
   return (
     <div className="App">
-      <UseMemoTest></UseMemoTest>
+      <DebounceDemo></DebounceDemo>
     </div>
   );
 }
